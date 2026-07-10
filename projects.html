@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Проекты и волонтёрство — Uniway</title>
+<meta name="description" content="Идеи проектов, олимпиад и волонтёрства для сильного портфолио.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-blobs"><span></span><span></span><span></span></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">U</span>Uniway</a>
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="nav.home">Главная</a>
+      <a href="university-quiz.html" data-i18n="nav.uni">Подбор университета</a>
+      <a href="career-quiz.html" data-i18n="nav.career">Профориентация</a>
+      <a href="projects.html" data-i18n="nav.projects">Проекты и волонтёрство</a>
+      <a href="essay.html" data-i18n="nav.essay">Эссе</a>
+      <a href="about.html" data-i18n="nav.about">О нас</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-btn" type="button">🌐 <span class="lang-short">RU</span></button>
+        <div class="lang-menu"></div>
+      </div>
+      <button class="theme-btn" type="button" aria-label="Тема">🌙</button>
+      <a href="#" class="nav-cta bot-link" target="_blank" rel="noopener" data-i18n="nav.cta">Открыть бота</a>
+      <button class="burger" type="button" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-panel">
+    <a href="index.html" data-i18n="nav.home">Главная</a>
+    <a href="university-quiz.html" data-i18n="nav.uni">Подбор университета</a>
+    <a href="career-quiz.html" data-i18n="nav.career">Профориентация</a>
+    <a href="projects.html" class="active" data-i18n="nav.projects">Проекты и волонтёрство</a>
+    <a href="essay.html" data-i18n="nav.essay">Эссе</a>
+    <a href="about.html" data-i18n="nav.about">О нас</a>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <h1 data-i18n="projects.pageTitle">Проекты и волонтёрство</h1>
+      <p data-i18n="projects.pageLead">Идеи для портфолио.</p>
+    </div>
+  </div>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="filter-bar" id="filter-bar"></div>
+      <div class="grid grid-3" id="resource-grid"></div>
+      <p class="text-muted text-center mt-32" data-i18n="projects.note">Стартовый список идей.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="margin-top:0;padding-top:0;border-top:none;">
+      <span data-i18n="footer.rights">Все инструменты бесплатны.</span>
+      <span>© <span id="year"></span> Uniway</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/career-quiz.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+let activeFilter = 'all';
+
+function renderFilterBar(){
+  const lang = getLang();
+  const bar = document.getElementById('filter-bar');
+  const cats = ['all', ...Object.keys(CAREER_DATA)];
+  bar.innerHTML = cats.map(key => {
+    const label = key === 'all' ? t('projects.filterAll') : CAREER_DATA[key].title[lang];
+    const icon = key === 'all' ? '✨' : CAREER_DATA[key].icon;
+    return `<button type="button" class="filter-chip${key === activeFilter ? ' active' : ''}" data-cat="${key}">${icon} ${label}</button>`;
+  }).join('');
+  bar.querySelectorAll('.filter-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeFilter = btn.getAttribute('data-cat');
+      renderFilterBar();
+      renderGrid();
+    });
+  });
+}
+
+function renderGrid(){
+  const lang = getLang();
+  const grid = document.getElementById('resource-grid');
+  const items = RESOURCES.filter(r => activeFilter === 'all' || r.category === activeFilter);
+  grid.innerHTML = items.map(r => `
+    <div class="card ${CAREER_DATA[r.category].tone}">
+      <div class="ico">${CAREER_DATA[r.category].icon}</div>
+      <span class="pill" style="background:var(--surface-alt);color:var(--text-muted);margin-bottom:10px;">${TYPE_LABELS[r.type][lang]}</span>
+      <h3>${r.title[lang]}</h3>
+      <p>${r.desc[lang]}</p>
+    </div>`).join('');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderFilterBar();
+  renderGrid();
+});
+document.addEventListener('uniway:langchange', () => { renderFilterBar(); renderGrid(); });
+</script>
+</body>
+</html>
