@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uniway — поступи за границу сам, без агентств</title>
+<meta name="description" content="Бесплатная платформа для учеников 9–11 классов: подбор университета, профориентация, помощь с проектами и эссе.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-blobs"><span></span><span></span><span></span></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">U</span>
+      Uniway
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="nav.home">Главная</a>
+      <a href="university-quiz.html" data-i18n="nav.uni">Подбор университета</a>
+      <a href="career-quiz.html" data-i18n="nav.career">Профориентация</a>
+      <a href="projects.html" data-i18n="nav.projects">Проекты и волонтёрство</a>
+      <a href="essay.html" data-i18n="nav.essay">Эссе</a>
+      <a href="about.html" data-i18n="nav.about">О нас</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-btn" type="button">🌐 <span class="lang-short">RU</span></button>
+        <div class="lang-menu"></div>
+      </div>
+      <button class="theme-btn" type="button" aria-label="Тема">🌙</button>
+      <a href="#" class="nav-cta bot-link" target="_blank" rel="noopener" data-i18n="nav.cta">Открыть бота</a>
+      <button class="burger" type="button" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-panel">
+    <a href="index.html" data-i18n="nav.home">Главная</a>
+    <a href="university-quiz.html" data-i18n="nav.uni">Подбор университета</a>
+    <a href="career-quiz.html" data-i18n="nav.career">Профориентация</a>
+    <a href="projects.html" data-i18n="nav.projects">Проекты и волонтёрство</a>
+    <a href="essay.html" data-i18n="nav.essay">Эссе</a>
+    <a href="about.html" data-i18n="nav.about">О нас</a>
+    <a href="#" class="bot-link" target="_blank" rel="noopener" data-i18n="nav.cta" style="color:var(--primary);font-weight:800;">Открыть бота</a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow" data-i18n="home.eyebrow">Бесплатно · Без агентств · Для 9–11 классов</span>
+        <h1 data-i18n-html="home.heroHtml">Поступи за границу <span class="grad">сам — без агентств</span></h1>
+        <p class="lead" data-i18n="home.heroLead">Uniway — бесплатная платформа для учеников 9–11 классов.</p>
+        <div class="hero-actions">
+          <a href="university-quiz.html" class="btn btn-primary btn-lg" data-i18n="home.ctaPrimary">Пройти подбор университета</a>
+          <a href="#" class="btn btn-ghost btn-lg bot-link" target="_blank" rel="noopener" data-i18n="home.ctaSecondary">Открыть Telegram-бота</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b data-i18n="home.stat1n">4</b><span data-i18n="home.stat1l">инструмента для поступления</span></div>
+          <div class="hero-stat"><b data-i18n="home.stat2n">100%</b><span data-i18n="home.stat2l">бесплатно, без комиссий</span></div>
+          <div class="hero-stat"><b data-i18n="home.stat3n">9–11</b><span data-i18n="home.stat3l">классы школы</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-card">
+          <span class="tag" data-i18n="home.cardTag">Результат подбора</span>
+          <h3 data-i18n="home.cardTitle">Твой профиль поступающего</h3>
+          <p class="text-muted mt-8" data-i18n="home.cardCountry">Нидерланды · Прикладная информатика</p>
+          <div class="mt-24" style="display:flex;align-items:center;gap:12px;">
+            <div style="width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.2rem;">94%</div>
+            <span class="text-muted" data-i18n="home.cardMatch" style="font-size:.85rem;">совпадение</span>
+          </div>
+          <div class="hero-mini m1"><span class="ico" style="background:var(--accent-light);color:var(--accent-dark);">⏱️</span><span data-i18n="home.miniM1">Тест занимает 6 минут</span></div>
+          <div class="hero-mini m2"><span class="ico" style="background:var(--primary-light);color:var(--primary);">🎯</span><span data-i18n="home.miniM2">Персонально под тебя</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="home.featEyebrow">Что внутри</span>
+        <h2 data-i18n="home.featTitle">Всё для поступления в одном месте</h2>
+        <p data-i18n="home.featLead">Четыре инструмента в одном месте.</p>
+      </div>
+      <div class="grid grid-4">
+        <a href="university-quiz.html" class="card tone-violet">
+          <div class="ico">🎓</div>
+          <h3 data-i18n="home.f1title">Подбор университета</h3>
+          <p data-i18n="home.f1desc">Описание.</p>
+          <span class="card-link" data-i18n="common.readMore">Подробнее →</span>
+        </a>
+        <a href="career-quiz.html" class="card tone-teal">
+          <div class="ico">🧭</div>
+          <h3 data-i18n="home.f2title">Профориентация</h3>
+          <p data-i18n="home.f2desc">Описание.</p>
+          <span class="card-link" data-i18n="common.readMore">Подробнее →</span>
+        </a>
+        <a href="projects.html" class="card tone-pink">
+          <div class="ico">🌱</div>
+          <h3 data-i18n="home.f3title">Проекты и портфолио</h3>
+          <p data-i18n="home.f3desc">Описание.</p>
+          <span class="card-link" data-i18n="common.readMore">Подробнее →</span>
+        </a>
+        <a href="essay.html" class="card tone-yellow">
+          <div class="ico">✍️</div>
+          <h3 data-i18n="home.f4title">Помощь с эссе</h3>
+          <p data-i18n="home.f4desc">Описание.</p>
+          <span class="card-link" data-i18n="common.readMore">Подробнее →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section>
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow" data-i18n="home.whyEyebrow">Почему Uniway</span>
+          <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;" data-i18n="home.whyTitle">Агентства обещают многое.</h2>
+          <p class="text-muted mt-16" data-i18n="home.whyLead">Текст.</p>
+        </div>
+        <div class="compare">
+          <div class="row bad"><span class="mark">🚫</span><div><b data-i18n="home.cmp1bad_t">Агентства</b><span data-i18n="home.cmp1bad_d">Скрытые платежи</span></div></div>
+          <div class="row good"><span class="mark">✅</span><div><b data-i18n="home.cmp1good_t">Uniway</b><span data-i18n="home.cmp1good_d">100% бесплатно</span></div></div>
+          <div class="row bad"><span class="mark">🚫</span><div><b data-i18n="home.cmp2bad_t">Шаблоны эссе</b></div></div>
+          <div class="row good"><span class="mark">✅</span><div><b data-i18n="home.cmp2good_t">Твоя история</b></div></div>
+          <div class="row bad"><span class="mark">🚫</span><div><b data-i18n="home.cmp3bad_t">Выгодные им направления</b></div></div>
+          <div class="row good"><span class="mark">✅</span><div><b data-i18n="home.cmp3good_t">Подбор под тебя</b></div></div>
+          <div class="row bad"><span class="mark">🚫</span><div><b data-i18n="home.cmp4bad_t">Исчезают после оплаты</b></div></div>
+          <div class="row good"><span class="mark">✅</span><div><b data-i18n="home.cmp4good_t">Мы рядом всегда</b></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="home.stepsEyebrow">Как это работает</span>
+        <h2 data-i18n="home.stepsTitle">Четыре шага</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h4 data-i18n="home.s1t">Пройди тесты</h4><p data-i18n="home.s1d">Описание.</p></div>
+        <div class="step"><div class="num">2</div><h4 data-i18n="home.s2t">Получи список</h4><p data-i18n="home.s2d">Описание.</p></div>
+        <div class="step"><div class="num">3</div><h4 data-i18n="home.s3t">Собери портфолио</h4><p data-i18n="home.s3d">Описание.</p></div>
+        <div class="step"><div class="num">4</div><h4 data-i18n="home.s4t">Напиши эссе</h4><p data-i18n="home.s4d">Описание.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-band">
+        <h2 data-i18n="home.ctaBandTitle">Готов сделать первый шаг?</h2>
+        <p data-i18n="home.ctaBandLead">Пройди бесплатный тест прямо сейчас.</p>
+        <div class="hero-actions">
+          <a href="university-quiz.html" class="btn btn-accent btn-lg" data-i18n="home.ctaPrimary">Пройти подбор университета</a>
+          <a href="#" class="btn btn-ghost btn-lg bot-link" target="_blank" rel="noopener" data-i18n="home.ctaSecondary">Открыть Telegram-бота</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;"><span class="brand-mark">U</span>Uniway</div>
+        <p class="text-muted" style="font-size:.92rem;max-width:280px;" data-i18n="footer.tagline">Бесплатная платформа.</p>
+      </div>
+      <div>
+        <h5 data-i18n="footer.product">Инструменты</h5>
+        <ul>
+          <li><a href="university-quiz.html" data-i18n="nav.uni">Подбор университета</a></li>
+          <li><a href="career-quiz.html" data-i18n="nav.career">Профориентация</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Проекты и волонтёрство</a></li>
+          <li><a href="essay.html" data-i18n="nav.essay">Эссе</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.company">О проекте</h5>
+        <ul>
+          <li><a href="about.html" data-i18n="footer.mission">Наша миссия</a></li>
+          <li><a href="about.html" data-i18n="nav.about">О нас</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.bot">Telegram-бот</h5>
+        <ul>
+          <li><a href="#" class="bot-link" target="_blank" rel="noopener">@admissions_ai_bot</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">Все инструменты бесплатны.</span>
+      <span>© <span id="year"></span> Uniway</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
