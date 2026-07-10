@@ -1,4 +1,4 @@
-/* Uniway — Career Guidance quiz: questions, categories & scoring */
+/* UniAtlas — Career Guidance quiz: questions, categories & scoring */
 
 const CAREER_QUESTIONS = [
   {
