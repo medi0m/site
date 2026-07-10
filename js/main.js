@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Uniway — shared UI behavior (nav, theme, language switcher)
+   UniAtlas — shared UI behavior (nav, theme, language switcher)
    ========================================================================== */
 
 function buildLangMenu(){
