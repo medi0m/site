@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Uniway — University Match quiz: questions, dataset & scoring
+   UniAtlas — University Match quiz: questions, dataset & scoring
    ========================================================================== */
 
 const UNI_QUESTIONS = [
