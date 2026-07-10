@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Uniway — i18n dictionary & engine
+   UniAtlas — i18n dictionary & engine
    Add a new language by adding a new top-level key (e.g. "uz") with the
    same structure, then add it to LANGS below.
    ========================================================================== */
@@ -40,7 +40,7 @@ const I18N = {
 
     'home.eyebrow': 'Бесплатно · Без агентств · Для 9–11 классов',
     'home.heroHtml': 'Поступи за границу <span class="grad">сам — без агентств</span>',
-    'home.heroLead': 'Uniway — бесплатная платформа для учеников 9–11 классов: подбор университета, профориентация, помощь с проектами, волонтёрством и эссе. Всё, за что агентства берут тысячи долларов — теперь бесплатно и у тебя в руках.',
+    'home.heroLead': 'UniAtlas — бесплатная платформа для учеников 9–11 классов: подбор университета, профориентация, помощь с проектами, волонтёрством и эссе. Всё, за что агентства берут тысячи долларов — теперь бесплатно и у тебя в руках.',
     'home.ctaPrimary': 'Пройти подбор университета',
     'home.ctaSecondary': 'Открыть Telegram-бота',
     'home.stat1n': '4', 'home.stat1l': 'инструмента для поступления',
@@ -66,11 +66,11 @@ const I18N = {
     'home.f4title': 'Помощь с эссе',
     'home.f4desc': 'Структура, чек-лист и частые ошибки — чтобы написать эссе, которое звучит как ты, а не как шаблон.',
 
-    'home.whyEyebrow': 'Почему Uniway',
+    'home.whyEyebrow': 'Почему UniAtlas',
     'home.whyTitle': 'Агентства обещают многое. Мы даём результат.',
-    'home.whyLead': 'Многие агентства берут деньги, но не доводят до цели: пропадают на середине пути, навязывают «удобные» им направления вместо тех, что подходят тебе, или просто исчезают после оплаты. Мы сами через это проходили — и сделали Uniway, чтобы у каждого был честный и бесплатный путь.',
+    'home.whyLead': 'Многие агентства берут деньги, но не доводят до цели: пропадают на середине пути, навязывают «удобные» им направления вместо тех, что подходят тебе, или просто исчезают после оплаты. Мы сами через это проходили — и сделали UniAtlas, чтобы у каждого был честный и бесплатный путь.',
     'home.cmp1bad_t': 'Агентства', 'home.cmp1bad_d': 'Скрытые платежи и комиссии почти на каждом шаге',
-    'home.cmp1good_t': 'Uniway', 'home.cmp1good_d': '100% бесплатно, без скрытых условий и подписок',
+    'home.cmp1good_t': 'UniAtlas', 'home.cmp1good_d': '100% бесплатно, без скрытых условий и подписок',
     'home.cmp2bad_t': 'Готовые шаблоны эссе под копирку',
     'home.cmp2good_t': 'Помощь раскрыть твою историю, а не чужую',
     'home.cmp3bad_t': 'Продают направления, выгодные им',
@@ -89,12 +89,12 @@ const I18N = {
     'home.ctaBandLead': 'Пройди бесплатный тест прямо сейчас — результат увидишь через 6 минут, без регистрации.',
 
     'about.pageTitle': 'О нас',
-    'about.pageLead': 'Uniway создан учениками, которые сами прошли через поступление за границу — и через агентства, которые не сдержали обещаний.',
+    'about.pageLead': 'UniAtlas создан учениками, которые сами прошли через поступление за границу — и через агентства, которые не сдержали обещаний.',
     'about.storyEyebrow': 'Наша история',
-    'about.storyTitle': 'Почему появился Uniway',
+    'about.storyTitle': 'Почему появился UniAtlas',
     'about.storyP1': 'Когда мы сами готовились к поступлению, мы обратились в агентство — заплатили немалую сумму и ждали помощи. В итоге агентство тянуло время, предлагало не те университеты, которые мы хотели с самого начала, а те, за которые получало комиссию, и почти не помогало с самим процессом.',
     'about.storyP2': 'Мы поняли, что большинству учеников из 9–11 классов не хватает не денег на агентство, а простого структурированного пути: понять себя, узнать варианты, собрать портфолио и грамотно подать документы. Всё это можно сделать самостоятельно — если есть правильные инструменты.',
-    'about.storyP3': 'Так появился сначала Telegram-бот с персональным подбором, а затем и Uniway — сайт, где эти инструменты доступны каждому бесплатно, в удобном и современном формате.',
+    'about.storyP3': 'Так появился сначала Telegram-бот с персональным подбором, а затем и UniAtlas — сайт, где эти инструменты доступны каждому бесплатно, в удобном и современном формате.',
     'about.missionEyebrow': 'Миссия',
     'about.missionTitle': 'Сделать поступление за границу честным и доступным',
     'about.mission1t': 'Без посредников', 'about.mission1d': 'Ты сам управляешь процессом — мы даём инструменты, а не продаём решения.',
@@ -103,7 +103,7 @@ const I18N = {
     'about.tlEyebrow': 'Путь проекта',
     'about.tl1t': 'Личный опыт', 'about.tl1d': 'Столкнулись с недобросовестным агентством при поступлении и решили, что так быть не должно.',
     'about.tl2t': 'Telegram-бот', 'about.tl2d': 'Создали бота с персонализированным подбором университетов и профориентацией.',
-    'about.tl3t': 'Сайт Uniway', 'about.tl3d': 'Собрали все инструменты в одном удобном и современном месте — с квизами, проектами и помощью с эссе.',
+    'about.tl3t': 'Сайт UniAtlas', 'about.tl3d': 'Собрали все инструменты в одном удобном и современном месте — с квизами, проектами и помощью с эссе.',
     'about.tl4t': 'Дальше — больше', 'about.tl4d': 'Планируем добавить больше языков, менторов-студентов и базу реальных историй поступления.',
 
     'essay.pageTitle': 'Помощь с эссе',
@@ -175,7 +175,7 @@ const I18N = {
 
     'home.eyebrow': 'Free · No agencies · For grades 9–11',
     'home.heroHtml': 'Get into a university abroad <span class="grad">yourself — no agencies</span>',
-    'home.heroLead': 'Uniway is a free platform for grades 9–11: university matching, career guidance, help with projects, volunteering and essays. Everything agencies used to charge thousands of dollars for — now free and in your hands.',
+    'home.heroLead': 'UniAtlas is a free platform for grades 9–11: university matching, career guidance, help with projects, volunteering and essays. Everything agencies used to charge thousands of dollars for — now free and in your hands.',
     'home.ctaPrimary': 'Find my university',
     'home.ctaSecondary': 'Open Telegram bot',
     'home.stat1n': '4', 'home.stat1l': 'admission tools',
@@ -201,11 +201,11 @@ const I18N = {
     'home.f4title': 'Essay Help',
     'home.f4desc': 'Structure, checklist and common mistakes — so your essay sounds like you, not a template.',
 
-    'home.whyEyebrow': 'Why Uniway',
+    'home.whyEyebrow': 'Why UniAtlas',
     'home.whyTitle': 'Agencies promise a lot. We deliver results.',
-    'home.whyLead': "Many agencies take your money but don't deliver: they disappear halfway through, push majors that are convenient for them instead of right for you, or vanish after payment. We've been there — so we built Uniway to give everyone an honest, free path.",
+    'home.whyLead': "Many agencies take your money but don't deliver: they disappear halfway through, push majors that are convenient for them instead of right for you, or vanish after payment. We've been there — so we built UniAtlas to give everyone an honest, free path.",
     'home.cmp1bad_t': 'Agencies', 'home.cmp1bad_d': 'Hidden fees and commissions at almost every step',
-    'home.cmp1good_t': 'Uniway', 'home.cmp1good_d': '100% free, no hidden terms or subscriptions',
+    'home.cmp1good_t': 'UniAtlas', 'home.cmp1good_d': '100% free, no hidden terms or subscriptions',
     'home.cmp2bad_t': 'Copy-paste essay templates',
     'home.cmp2good_t': 'Help uncovering your story, not someone else\'s',
     'home.cmp3bad_t': 'Push majors that benefit them',
@@ -224,12 +224,12 @@ const I18N = {
     'home.ctaBandLead': 'Take the free test right now — see your result in 6 minutes, no sign-up.',
 
     'about.pageTitle': 'About us',
-    'about.pageLead': 'Uniway was built by students who went through studying-abroad applications themselves — and through agencies that broke their promises.',
+    'about.pageLead': 'UniAtlas was built by students who went through studying-abroad applications themselves — and through agencies that broke their promises.',
     'about.storyEyebrow': 'Our story',
-    'about.storyTitle': 'Why Uniway exists',
+    'about.storyTitle': 'Why UniAtlas exists',
     'about.storyP1': "When we were preparing to apply, we went to an agency — paid a significant amount and waited for help. In the end, the agency stalled, pushed universities we never wanted instead of the ones we chose from the start, and barely helped with the process itself.",
     'about.storyP2': "We realized most students in grades 9–11 don't lack money for an agency — they lack a simple, structured path: understand yourself, learn your options, build a portfolio, and apply properly. All of this can be done independently, with the right tools.",
-    'about.storyP3': 'That led first to a Telegram bot with personalized matching, and then to Uniway — a site where these tools are free for everyone, in a modern, easy-to-use format.',
+    'about.storyP3': 'That led first to a Telegram bot with personalized matching, and then to UniAtlas — a site where these tools are free for everyone, in a modern, easy-to-use format.',
     'about.missionEyebrow': 'Mission',
     'about.missionTitle': 'Make studying abroad honest and accessible',
     'about.mission1t': 'No middlemen', 'about.mission1d': "You stay in control of the process — we give you tools, not sell you decisions.",
@@ -238,7 +238,7 @@ const I18N = {
     'about.tlEyebrow': 'Project timeline',
     'about.tl1t': 'Personal experience', 'about.tl1d': 'Ran into a dishonest agency while applying — and decided it shouldn\'t be this way.',
     'about.tl2t': 'Telegram bot', 'about.tl2d': 'Built a bot with personalized university matching and career guidance.',
-    'about.tl3t': 'Uniway website', 'about.tl3d': 'Brought all the tools into one modern, convenient place — quizzes, projects and essay help.',
+    'about.tl3t': 'UniAtlas website', 'about.tl3d': 'Brought all the tools into one modern, convenient place — quizzes, projects and essay help.',
     'about.tl4t': "What's next", 'about.tl4d': 'Planning more languages, student mentors, and a library of real admission stories.',
 
     'essay.pageTitle': 'Essay Help',
@@ -310,7 +310,7 @@ const I18N = {
 
     'home.eyebrow': 'Тегін · Агенттіксіз · 9–11 сынып үшін',
     'home.heroHtml': 'Шетелге <span class="grad">агенттіксіз өзің</span> түс',
-    'home.heroLead': 'Uniway — 9–11 сынып оқушыларына арналған тегін платформа: университет таңдау, кәсіп бағдары, жобалар мен еріктілерге, эссеге көмек. Бұрын агенттіктер мыңдаған долларға сататын нәрсенің бәрі — енді тегін әрі өз қолыңда.',
+    'home.heroLead': 'UniAtlas — 9–11 сынып оқушыларына арналған тегін платформа: университет таңдау, кәсіп бағдары, жобалар мен еріктілерге, эссеге көмек. Бұрын агенттіктер мыңдаған долларға сататын нәрсенің бәрі — енді тегін әрі өз қолыңда.',
     'home.ctaPrimary': 'Университет таңдауды бастау',
     'home.ctaSecondary': 'Telegram-ботты ашу',
     'home.stat1n': '4', 'home.stat1l': 'түсу құралы',
@@ -336,11 +336,11 @@ const I18N = {
     'home.f4title': 'Эссеге көмек',
     'home.f4desc': 'Құрылым, тексеру тізімі және жиі кездесетін қателер — эссең үлгі емес, өзің сияқты естілуі үшін.',
 
-    'home.whyEyebrow': 'Неге Uniway',
+    'home.whyEyebrow': 'Неге UniAtlas',
     'home.whyTitle': 'Агенттіктер көп уәде береді. Біз нәтиже береміз.',
-    'home.whyLead': 'Көптеген агенттіктер ақша алады, бірақ нәтижеге жеткізбейді: жол ортасында жоғалады, саған емес, өздеріне тиімді бағыттарды таңдатады немесе төлемнен кейін жай ғана байланыссыз қалады. Біз мұны бастан өткіздік — сондықтан әркімге адал әрі тегін жол ұсынатын Uniway жасадық.',
+    'home.whyLead': 'Көптеген агенттіктер ақша алады, бірақ нәтижеге жеткізбейді: жол ортасында жоғалады, саған емес, өздеріне тиімді бағыттарды таңдатады немесе төлемнен кейін жай ғана байланыссыз қалады. Біз мұны бастан өткіздік — сондықтан әркімге адал әрі тегін жол ұсынатын UniAtlas жасадық.',
     'home.cmp1bad_t': 'Агенттіктер', 'home.cmp1bad_d': 'Дерлік әр қадамда жасырын төлемдер мен комиссиялар',
-    'home.cmp1good_t': 'Uniway', 'home.cmp1good_d': '100% тегін, жасырын шарттарсыз',
+    'home.cmp1good_t': 'UniAtlas', 'home.cmp1good_d': '100% тегін, жасырын шарттарсыз',
     'home.cmp2bad_t': 'Көшірме эссе үлгілері',
     'home.cmp2good_t': 'Басқаның емес, өз тарихыңды ашуға көмек',
     'home.cmp3bad_t': 'Өздеріне тиімді бағыттарды сатады',
@@ -359,12 +359,12 @@ const I18N = {
     'home.ctaBandLead': 'Тегін тестен қазір өт — нәтижені 6 минутта көресің, тіркелусіз.',
 
     'about.pageTitle': 'Біз туралы',
-    'about.pageLead': 'Uniway-ды шетелге түсуді өздері бастан өткерген — және уәдесін орындамаған агенттіктерді көрген оқушылар жасады.',
+    'about.pageLead': 'UniAtlas-ды шетелге түсуді өздері бастан өткерген — және уәдесін орындамаған агенттіктерді көрген оқушылар жасады.',
     'about.storyEyebrow': 'Біздің тарих',
-    'about.storyTitle': 'Uniway неге пайда болды',
+    'about.storyTitle': 'UniAtlas неге пайда болды',
     'about.storyP1': 'Түсуге дайындалып жүргенде біз агенттікке жүгіндік — біршама ақша төлеп, көмек күттік. Соңында агенттік уақытты созды, бастапқыда өзіміз таңдаған университеттердің орнына өздеріне комиссия әкелетіндерін ұсынды және процестің өзіне дерлік көмектеспеді.',
     'about.storyP2': 'Біз 9–11 сынып оқушыларының көбіне агенттікке ақша емес, қарапайым әрі құрылымды жол жетіспейтінін түсіндік: өзіңді тану, нұсқаларды білу, портфолио жинау және құжаттарды дұрыс тапсыру. Мұның бәрін дұрыс құралдар болса, өз бетінше жасауға болады.',
-    'about.storyP3': 'Осылай алдымен жеке таңдау жасайтын Telegram-бот, содан кейін осы құралдар әркімге тегін қолжетімді заманауи Uniway сайты пайда болды.',
+    'about.storyP3': 'Осылай алдымен жеке таңдау жасайтын Telegram-бот, содан кейін осы құралдар әркімге тегін қолжетімді заманауи UniAtlas сайты пайда болды.',
     'about.missionEyebrow': 'Миссия',
     'about.missionTitle': 'Шетелге түсуді адал әрі қолжетімді ету',
     'about.mission1t': 'Делдалсыз', 'about.mission1d': 'Процесті өзің басқарасың — біз шешім сатпаймыз, құрал береміз.',
@@ -373,7 +373,7 @@ const I18N = {
     'about.tlEyebrow': 'Жобаның жолы',
     'about.tl1t': 'Жеке тәжірибе', 'about.tl1d': 'Түсу кезінде адал емес агенттікке тап болдық — солай болмауы керек деп шештік.',
     'about.tl2t': 'Telegram-бот', 'about.tl2d': 'Университетті жеке таңдау мен кәсіп бағдары бар бот жасадық.',
-    'about.tl3t': 'Uniway сайты', 'about.tl3d': 'Барлық құралды заманауи әрі ыңғайлы бір жерге жинадық — квиздер, жобалар және эссеге көмек.',
+    'about.tl3t': 'UniAtlas сайты', 'about.tl3d': 'Барлық құралды заманауи әрі ыңғайлы бір жерге жинадық — квиздер, жобалар және эссеге көмек.',
     'about.tl4t': 'Алдағы жоспар', 'about.tl4d': 'Көбірек тіл, студент-менторлар және нақты түсу тарихтарының қорын қосуды жоспарлаудамыз.',
 
     'essay.pageTitle': 'Эссеге көмек',
