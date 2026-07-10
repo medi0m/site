@@ -1,4 +1,4 @@
-/* Uniway — Projects & Volunteering resource list (reuses CAREER_DATA categories) */
+/* UniAtlas — Projects & Volunteering resource list (reuses CAREER_DATA categories) */
 
 const TYPE_LABELS = {
   project: { ru: 'Проект', en: 'Project', kz: 'Жоба' },
