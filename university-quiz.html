@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Подбор университета — Uniway</title>
+<meta name="description" content="Ответь на 6 вопросов и получи список стран и университетов, которые тебе подходят.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-blobs"><span></span><span></span><span></span></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">U</span>Uniway</a>
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="nav.home">Главная</a>
+      <a href="university-quiz.html" data-i18n="nav.uni">Подбор университета</a>
+      <a href="career-quiz.html" data-i18n="nav.career">Профориентация</a>
+      <a href="projects.html" data-i18n="nav.projects">Проекты и волонтёрство</a>
+      <a href="essay.html" data-i18n="nav.essay">Эссе</a>
+      <a href="about.html" data-i18n="nav.about">О нас</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-btn" type="button">🌐 <span class="lang-short">RU</span></button>
+        <div class="lang-menu"></div>
+      </div>
+      <button class="theme-btn" type="button" aria-label="Тема">🌙</button>
+      <a href="#" class="nav-cta bot-link" target="_blank" rel="noopener" data-i18n="nav.cta">Открыть бота</a>
+      <button class="burger" type="button" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-panel">
+    <a href="index.html" data-i18n="nav.home">Главная</a>
+    <a href="university-quiz.html" class="active" data-i18n="nav.uni">Подбор университета</a>
+    <a href="career-quiz.html" data-i18n="nav.career">Профориентация</a>
+    <a href="projects.html" data-i18n="nav.projects">Проекты и волонтёрство</a>
+    <a href="essay.html" data-i18n="nav.essay">Эссе</a>
+    <a href="about.html" data-i18n="nav.about">О нас</a>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow" data-i18n="common.minutes">Займёт 5–7 минут</span>
+      <h1 data-i18n="uni.pageTitle">Подбор университета</h1>
+      <p data-i18n="uni.pageLead">Ответь на вопросы и получи список.</p>
+    </div>
+  </div>
+
+  <section style="padding-top:0;">
+    <div class="container quiz-wrap">
+      <div class="quiz-card" id="quiz-root"></div>
+
+      <div id="uni-result" style="display:none;">
+        <div class="quiz-card">
+          <span class="result-badge">🎯 <span data-i18n="uni.resultTitle">Похоже, тебе подойдут:</span></span>
+          <p class="text-muted" data-i18n="uni.resultLead">Стартовая точка для исследования.</p>
+          <div class="result-list" id="uni-result-list"></div>
+          <div class="hero-actions mt-32">
+            <button type="button" class="btn btn-ghost" id="uni-restart" data-i18n="common.restart">Пройти заново</button>
+            <a href="#" class="btn btn-primary bot-link" target="_blank" rel="noopener" data-i18n="common.openBot">Открыть в Telegram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="margin-top:0;padding-top:0;border-top:none;">
+      <span data-i18n="footer.rights">Все инструменты бесплатны.</span>
+      <span>© <span id="year"></span> Uniway</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/university-quiz.js"></script>
+<script src="js/quiz-engine.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+function renderUniResults(answers){
+  document.getElementById('quiz-root').closest('.quiz-card').style.display = 'none';
+  const resultBox = document.getElementById('uni-result');
+  resultBox.style.display = 'block';
+  const list = document.getElementById('uni-result-list');
+  const results = computeUniResults(answers);
+
+  function draw(){
+    const lang = getLang();
+    list.innerHTML = results.map(r => `
+      <div class="result-item">
+        <span class="flag">${r.country.flag}</span>
+        <div class="body">
+          <b>${r.country.name[lang]}</b>
+          <p>${r.country.blurb[lang]}</p>
+          <p class="text-muted mt-8" style="font-size:.8rem;">${r.country.examples.join(' · ')}</p>
+        </div>
+        <span class="match">${r.percent}% <span data-i18n="uni.matchLabel"></span></span>
+      </div>`).join('');
+    list.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.getAttribute('data-i18n')); });
+  }
+  draw();
+  document.addEventListener('uniway:langchange', draw);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  runQuiz(UNI_QUESTIONS, { onComplete: renderUniResults });
+  document.getElementById('uni-restart').addEventListener('click', () => location.reload());
+});
+</script>
+</body>
+</html>
